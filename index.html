@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap" rel="stylesheet">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="style7.css">
+    <script type="text/Javascript" src="script3.js"></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display">
+            <form name="form">
+                <input class="textview" name="textview">
+            </form>
+
+            <div class="calculator-buttons">
+                <button class="calc-button is-clear" value="C" onclick="clearAll();">C</button>
+                <button class="calc-button is-bsp" value="bsp" onclick="backSpace('')">&#8592;</button>
+                <button class="calc-button is-trig" value="tan()" onclick="tan();">tan</button>
+                <button class="calc-button is-trig" value="sin()" onclick="sin();">sin</button>
+                <button class="calc-button is-trig" value="cos()" onclick="cos();">cos</button>
+                <button class="calc-button is-percent" value="%" onclick="percentage('%')">&percnt;</button>
+
+                <button class="calc-button" value="7" onclick="insert('7')">7</button>
+                <button class="calc-button" value="8" onclick="insert('8')">8</button>
+                <button class="calc-button" value="9" onclick="insert('9')">9</button>
+                <button class="calc-button is-math" value="/" onclick="insert('/')">&divide;</button>
+
+                <button class="calc-button" value="4" onclick="insert('4')">4</button>
+                <button class="calc-button" value="5" onclick="insert('5')">5</button>
+                <button class="calc-button" value="6" onclick="insert('6')">6</button>
+                <button class="calc-button is-math" value="*" onclick="insert('*')">&times;</button>
+
+                <button class="calc-button" value="1" onclick="insert('1')">1</button>
+                <button class="calc-button" value="2" onclick="insert('2')">2</button>
+                <button class="calc-button" value="3" onclick="insert('3')">3</button>
+                <button class="calc-button is-math" value="-" onclick="insert('-')">&minus;</button>
+
+                <button class="calc-button is-zero" value="0" onclick="insert('0')">0</button>
+                <button class="calc-button" value="." onclick="insert('.')">&#46;</button>
+                <button class="calc-button is-math" value="+" onclick="insert('+')">&plus;</button>
+                <button class="calc-button is-equals" value="=" onclick="equal('')">&equals;</button>
+            </div>
+        </div>
+</body>
+
+</html>
